@@ -104,3 +104,4 @@ ship_section_template = {
 		}
 	}
 }
+

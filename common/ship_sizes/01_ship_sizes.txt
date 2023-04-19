@@ -283,10 +283,6 @@ destroyer = {
 						has_technology = tech_battleships
 					}
 					modifier = {
-						add = -5 #10
-						has_technology = tech_Carrier_1
-					}
-					modifier = {
 						add = -5 #5
 						has_technology = tech_Dreadnought_1
 					}
@@ -318,7 +314,7 @@ cruiser = {
 	}
 	
 	max_hitpoints = @cruiser_hp
-	size_multiplier = 3
+	size_multiplier = 4
 	fleet_slot_size = 3
 	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
 	num_target_locators = 4
@@ -355,18 +351,6 @@ cruiser = {
 				has_technology = tech_cruisers
 			}
 			modifier = {
-				add = -10 #40
-				has_technology = tech_StrikeCruiser_1
-			}
-			modifier = {
-				add = -20 #20
-				has_technology = tech_Battlecruiser_1
-			}
-			modifier = {
-				add = -10 #10
-				has_technology = tech_Carrier_1
-			}
-			modifier = {
 				add = -100
 				uses_standard_ship_sizes = no
 			}
@@ -396,7 +380,7 @@ Battlecruiser = {
 	max_hitpoints = 2500
 	size_multiplier = 10
 	fleet_slot_size = 10
-	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" } "mid3" = { locator = "part4" }  "stern" = { locator = "part5" } }
+	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" }   "stern" = { locator = "part4" } }  ### セクションの区画数
 	num_target_locators = 4
 	icon = nsc_ship_size_military_15
 	base_buildtime = 360
@@ -409,7 +393,7 @@ Battlecruiser = {
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
 
 	default_behavior = line
-	ship_roles = { artillery carrier gunship }
+	ship_roles = { gunship artillery explosive carrier energy_torpedoes }
 
 	prerequisites = { "tech_Battlecruiser_1" }	
 	class = shipclass_military
@@ -449,8 +433,6 @@ Battlecruiser = {
 	required_component_set = "combat_computers"
 	required_component_set = "ai_behaviour"
 	required_component_set = "nsc_supportship_aura"
-	required_component_set = "nsc_supportship_aura"
-	
 }
 
 battleship = {
@@ -497,24 +479,20 @@ battleship = {
 
 	ai_ship_data = {
 		fraction = {
-					base = 0
-					modifier = {
-						add = 20 #20
-						has_technology = tech_battleships
-						}
-					modifier = {
-						add = 5 #25
-						has_technology = tech_Carrier_1
-					}
-					modifier = {
-						add = -5 #20
-						has_technology = tech_titans
-					}
-					modifier = {
-						add = -100
-						uses_standard_ship_sizes = no
-					}
-				}
+			base = 0
+			modifier = {
+				add = 20 #20
+				has_technology = tech_battleships
+			}
+			modifier = {
+				add = -5 #20
+				has_technology = tech_titans
+			}
+			modifier = {
+				add = -100
+				uses_standard_ship_sizes = no
+			}
+		}
 	}
 
 	required_component_set = "power_core"
@@ -554,6 +532,7 @@ Dreadnought = {
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
 
 	default_behavior = line
+	ship_roles = { gunship artillery explosive carrier energy_torpedoes }
 
 	
 
@@ -692,6 +671,7 @@ titan = {
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
 
 	default_behavior = artillery
+	ship_roles = { gunship artillery explosive carrier energy_torpedoes }
 	
 	potential_construction = {
 		OR = {
@@ -778,4 +758,3 @@ titan = {
 	required_component_set = "ai_behaviour"
 	required_component_set = "ship_aura_components"
 }
-

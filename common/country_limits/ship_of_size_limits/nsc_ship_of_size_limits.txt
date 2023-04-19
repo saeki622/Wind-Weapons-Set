@@ -1,20 +1,13 @@
-headquarters_ship_limit = {
-	ship_types = {
-		headquarters
-	}
-	base = 50 # 1 * HQ Size Multiplier
-	show = {
-		is_scope_valid = yes
-		has_technology = tech_starbase_6
-	}
-}
+########################
+### Wind Weapons Set ###
+########################
 
-Battlecruiser_ships_limit = {
+Battlecruiser_ships_limit = { 
 	ship_types = {
 		Battlecruiser
 	}
 	base = 10
-	max = 360
+	max = 1000 #360
 	naval_cap_fraction = 0.1
 	show = {
     is_scope_valid = yes
@@ -33,4 +26,70 @@ Dreadnought_ships_limit = {
     is_scope_valid = yes
     has_technology = tech_Dreadnought_1
   }
+}
+
+############
+### ACOT ###
+############
+
+precursor_escort_limit = {
+	ship_types = {
+		precursor_escort
+	}
+	base = 4
+	max = 160
+	naval_cap_fraction = 0.1
+	show = {
+		is_scope_valid = yes
+	}
+}
+
+precursor_battlecruiser_limit = {
+	ship_types = {
+		precursor_battlecruiser
+	}
+	base = 10
+	max = 120
+	naval_cap_fraction = 0.1
+	show = {
+		is_scope_valid = yes
+	}
+}
+
+precursor_titan_limit = {
+	ship_types = {
+		precursor_titan
+	}
+	base = 30
+	max = 60
+	naval_cap_fraction = 0.1
+	show = {
+		is_scope_valid = yes
+	}
+}
+
+fe_assault_carrier_limit = {
+	ship_types = {
+		fe_assault_carrier
+	}
+	base = 20
+	max = 40
+	naval_cap_fraction = 0.1
+	show = {
+		is_scope_valid = yes
+	}
+}
+
+precursor_colossus_limit = {
+	ship_types = {
+		precursor_types = {
+			precursor_colossus
+		}
+		base = 500
+		max = 500
+	}
+	naval_cap_fraction = 0.1
+	show = {
+		is_scope_valid = yes
+	}
 }

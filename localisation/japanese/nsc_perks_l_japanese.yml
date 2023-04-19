@@ -1,0 +1,4 @@
+﻿l_japanese:
+ ap_nsc_matterenergy:0 "物質とエネルギーの操作 $jp_nsc2$"
+ ap_nsc_matterenergy_desc:0 "科学者たちが物質とエネルギーのパターン操作方法を発見したことで、すでに保有している資源を変換して必要とされる別の資源を生み出すことができる。"
+ allow_resource_factory:0 "§H巨大構造物をアンロック:§!戦略資源工場 $jp_nsc2$"

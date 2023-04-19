@@ -21,7 +21,26 @@ default = {
 		space_dragon_origin_babies_limit
 		headquarters_ship_limit
 		explorationship_ship_limit
-		Dreadnought_ships_limit
 		Battlecruiser_ships_limit
+		Dreadnought_ships_limit
+
+		### acot ship phanon ###
+
+		acot_star_bender_limit ### TRANSPORT
+		acot_starfighter_hero_limit ### HERO TRANSPORT
+		acot_star_fighters_limit ### Star Chaser
+		acot_star_destroyer_limit ### Star Destroyer - Skirmisher
+		acot_star_devastator_limit ### Star Devastator - Main Battleship
+		acot_star_decimator_limit ### Star Decimator - Carrier
+		acot_star_dominator_limit #### Star Dominator I - Capital Ship
+		acot_star_annihilator_limit ##Star Annihilator - Flagship
+
+		### acot ship precursor ###
+
+		precursor_escort_limit
+		precursor_battlecruiser_limit
+		precursor_titan_limit
+		fe_assault_carrier_limit
+		precursor_colossus_limit
 	}
 }

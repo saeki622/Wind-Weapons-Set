@@ -306,7 +306,7 @@
 	
 	#MID1
 	entity = {
-		name = "reptilian_01_Dreadnought_mid1_L2S4_entity"
+		name = "reptilian_01_Dreadnought_mid_L2S4_entity"
 		pdxmesh = "reptilian_01_battleship_mid_L2S4_mesh"
 		
 		default_state = idle	
@@ -345,7 +345,7 @@
 	}
 	
 	entity = {
-		name = "reptilian_01_Dreadnought_mid1_L1M4_entity"
+		name = "reptilian_01_Dreadnought_mid_L1M4_entity"
 		pdxmesh = "reptilian_01_battleship_mid_L1M4_mesh"
 		
 		default_state = idle	
@@ -384,7 +384,7 @@
 	}
 	
 	entity = {
-		name = "reptilian_01_Dreadnought_mid1_L2M2_entity"
+		name = "reptilian_01_Dreadnought_mid_L2M2_entity"
 		pdxmesh = "reptilian_01_battleship_mid_L2M2_mesh"
 		
 		default_state = idle	
@@ -423,7 +423,7 @@
 	}
 	
 	entity = {
-		name = "reptilian_01_Dreadnought_mid1_L3_entity"
+		name = "reptilian_01_Dreadnought_mid_L3_entity"
 		pdxmesh = "reptilian_01_battleship_mid_L3_mesh"
 		
 		
@@ -463,7 +463,7 @@
 	}
 	
 	entity = {
-		name = "reptilian_01_Dreadnought_mid1_M4SHB_entity"
+		name = "reptilian_01_Dreadnought_mid_M4SHB_entity"
 		pdxmesh = "reptilian_01_battleship_mid_M4SHB_mesh"
 		locator = { name = "strike_craft_locator_01" 		position = { 0 	0 	0 	} }
 		
@@ -503,7 +503,7 @@
 	}
 	
 	entity = {
-		name = "reptilian_01_Dreadnought_mid1_S4LHB_entity"
+		name = "reptilian_01_Dreadnought_mid_S4LHB_entity"
 		pdxmesh = "reptilian_01_battleship_mid_S4LHB_mesh"
 		locator = {
 			name = "strike_craft_locator_01"

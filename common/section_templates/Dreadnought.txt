@@ -207,7 +207,7 @@ ship_section_template = {
 	key = "DREADNOUGHT_MID1_L2G5"
 	ship_size = Dreadnought
 	fits_on_slot = mid1
-	entity = "Dreadnought_mid1_L2M2_entity"
+	entity = "Dreadnought_mid_L2M2_entity"
 	icon = "GFX_ship_part_core_mid"
 	icon_frame = 1
 
@@ -267,7 +267,7 @@ ship_section_template = {
 	key = "DREADNOUGHT_MID1_L6"
 	ship_size = Dreadnought
 	fits_on_slot = mid1
-	entity = "Dreadnought_mid1_L3_entity"
+	entity = "Dreadnought_mid_L3_entity"
 	icon = "GFX_ship_part_core_mid"
 	icon_frame = 1
 
@@ -301,7 +301,7 @@ ship_section_template = {
 	key = "DREADNOUGHT_MID1_L2M7"
 	ship_size = Dreadnought
 	fits_on_slot = mid1
-	entity = "Dreadnought_mid1_L1M4_entity"
+	entity = "Dreadnought_mid_L1M4_entity"
 	icon = "GFX_ship_part_core_mid"
 	icon_frame = 1
 
@@ -352,7 +352,7 @@ ship_section_template = {
 	key = "DREADNOUGHT_MID1_L2PD9"
 	ship_size = Dreadnought
 	fits_on_slot = mid1
-	entity = "Dreadnought_mid1_L2S4_entity"
+	entity = "Dreadnought_mid_L2S4_entity"
 	icon = "GFX_ship_part_core_mid"
 	icon_frame = 1
 

@@ -1,0 +1,388 @@
+### Dryus氏の"[JP localize patch]At War: Carrier Improvements"の修正コード
+
+############
+### COST ###
+############
+@cost0 = 0
+@cost1 = 5
+@cost2 = 10
+@cost3 = 20
+
+#############
+### POWER ###
+#############
+@power0 = -5
+@power1 = -10
+@power2 = -15
+@power3 = -25
+
+
+#######################  
+### COMBAT COMPUTER ###  
+#######################
+
+### 発展型戦闘コンピューター（砲撃－包囲）
+utility_component_template = {
+  key = "EAC_COMBAT_COMPUTER_ARTILLERY_120_ADVANCED"             ### ID名称
+  size = small
+  icon = "GFX_eac_ship_part_computer_artillery_120_advanced"     ### 表示アイコン
+  icon_frame = 1
+  power = @power2
+  resources = {
+    category = ship_components   
+    cost = {                    ### 必要な資源
+      alloys = @cost2           ### 合金
+    }
+  }
+
+  class_restriction = { shipclass_military shipclass_starbase shipclass_military_special } ### 使用できる種類
+  size_restriction = { cruiser battleship titan Battlecruiser Dreadnought juggernaut crisis_cruiser star_eater offspring_cruiser offspring_battleship } ### 使用できる艦種
+
+  component_set = "combat_computers"                           ### componentの種類
+  ship_behavior = "artillery_120"
+  prerequisites = { "tech_combat_computers_2" }                ### 必要なテクノロジー
+  upgrades_to = "EAC_COMBAT_COMPUTER_ARTILLERY_120_SAPIENT"    ### テクノロジーの研究順番をごちゃまぜにならないようにするため
+
+  ship_modifier = {                  ### ゲーム内での効果(バフ)
+    ship_fire_rate_mult = 0.10       ### 連射レート10%up
+    ship_weapon_range_mult = 0.10    ### 武器レンジ10%up
+  }
+
+  ai_weight = {
+    weight = 3       ### weihtの値が大きいほどAIが優先して使用する
+
+    modifier = {
+      factor = 5
+      is_preferred_weapons = weapon_type_kinetic
+    }
+  }
+}
+
+### 知性型戦闘コンピューター（砲撃－包囲）
+utility_component_template ={
+  key = "EAC_COMBAT_COMPUTER_ARTILLERY_120_SAPIENT"
+  size = small
+  icon = "GFX_eac_ship_part_computer_artillery_120_sapient"
+  icon_frame = 1
+  power = @power3
+  resources = {
+    category = ship_components
+    cost = {
+      alloys = @cost3
+    }
+  }
+
+  class_restriction = { shipclass_military shipclass_starbase shipclass_military_special }
+  size_restriction = { cruiser battleship titan Battlecruiser Dreadnought juggernaut crisis_cruiser star_eater offspring_cruiser offspring_battleship }
+
+  component_set = "combat_computers"
+  ship_behavior = "artillery_120"
+  prerequisites = { "tech_combat_computers_3" }
+
+  ship_modifier = {
+    ship_fire_rate_mult = 0.20
+    ship_weapon_range_mult = 0.20
+  }
+
+  ai_weight = {
+    weight = 4
+
+    modifier ={
+      factor = 5
+      is_preferred_weapons = weapon_type_kinetic
+    }
+
+    modifier = {
+      factor = 0
+      OR = {
+        has_global_flag = ghost_ghost_signal_5_flag
+        has_global_flag = ghost_ghost_signal_4_flag
+        has_global_flag = ghost_ghost_signal_3_flag
+        has_global_flag = ghost_ghost_signal_2_flag
+        has_global_flag = ghost_ghost_signal_1_flag
+      }
+    }
+
+    modifier = {
+      factor = 0
+      has_ethic = ethic_gestalt_consciousness
+    }
+  }
+}
+
+### 自律型戦闘AI（砲撃－包囲）
+utility_component_template = {
+  key = "EAC_COMBAT_COMPUTER_ARTILLERY_120_AUTONOMOUS"
+  size = small
+  icon = "GFX_eac_ship_part_computer_artillery_120_sapient"
+  icon_frame = 1
+  power = @power3
+  resources = {
+    cost = {
+      alloys = @cost3
+    }
+  }
+
+  class_restriction = { shipclass_military shipclass_starbase shipclass_military_special }
+  size_restriction = { cruiser battleship titan Battlecruiser Dreadnought juggernaut crisis_cruiser star_eater offspring_cruiser offspring_battleship }
+
+  component_set = "combat_computers"
+  ship_behavior = "artillery_120"
+  prerequisites = { "tech_combat_computers_autonomous" }
+
+  ship_modifier = {
+    ship_fire_rate_mult = 0.20
+    ship_weapon_rang_mult = 0.20 
+  }
+
+  ai_weight = {
+    weight = 4
+
+    modifier = {
+      factor = 5
+      is_preferred_weapons = weapon_type_kinetic
+    }
+
+    modifier = {
+      factor = 0
+      NOT = { has_ethic = ethic_gestalt_consciousness }
+    }
+  }
+}
+
+### 未来予知型インターフェース（砲撃－包囲）
+utility_component_template = {
+  key = "EAC_COMBAT_COMPUTER_ARTILLERY_120_PRECOG"
+  size = small
+  icon = "GFX_eac_ship_part_computer_artillery_120_precog"
+  icon_frame = 1
+  power = @power3
+  resources = {
+    category = ship_components
+    cost = {
+      alloys = @cost3
+    }
+  }
+
+  class_restriction = { shipclass_military shipclass_starbase shipclass_military_special }
+  size_restriction = { cruiser battleship titan Battlecruiser Dreadnought juggernaut crisis_cruiser star_eater offspring_cruiser offspring_battleship }
+
+  component_set = "combat_computers"
+  ship_behavior = "artillery_120"
+  prerequisites = { "tech_precognition_interface" }
+
+  ship_modifier = {
+    ship_fire_rate_mult = 0.15
+    ship_weapon_range_mult = 0.15
+    ship_tracking_add = 10
+  }
+
+  ai_weight = {
+    weight = 5
+
+    modifier = {
+      factor = 5
+      is_preferred_weapons = weapon_type_kinetic
+    }
+  
+    modifier = {
+      factor = 0.0
+      is_country_type = default
+      NOT = { has_ascension_perk = ap_transcendence }
+    }
+
+    modifier = {
+      factor = 0.0
+      OR = {
+        is_country_type = fallen_empire
+        is_country_type = awakened_fallen_empire
+        is_country_type = grate_builders
+      }
+      NOT = { has_ethic = ethic_fanatic_spiritualist }
+    }
+  }
+}
+
+### 発展型戦闘コンピューター（砲撃－殲滅）
+utility_component_template = {
+  key = "EAC_COMBAT_COMPUTER_ARTILLERY_MAX_ADVANCED"
+  size = small
+  icon = "GFX_eac_ship_part_computer_artillery_max_advanced"
+  icon_frame = 1
+  power = @power2
+  resources = {
+    category = ship_components
+    cost = {
+      alloys = @cost2
+    }
+  }
+
+  class_restriction = { shipclass_military shipclass_starbase shipclass_military_special }
+  size_restriction = { cruiser battleship titan Battlecruiser Dreadnought juggernaut crisis_cruiser star_eater offspring_cruiser offspring_battleship }
+
+  component_set = "combat_computers"
+  ship_behavior = "artillery_max"
+  prerequisites = { "tech_combat_computers_2" }
+  upgrades_to = "EAC_COMBAT_COMPUTER_ARTILLERY_MAX_SAPIENT"
+
+  ship_modifier = {
+    ship_fire_rate_mult = 0.10
+    ship_weapon_range_mult = 0.10
+  }
+
+  ai_weight = {
+    weight = 3
+
+    modifier = {
+      factor = 5
+      is_preferred_weapons = weapon_type_energy
+    }
+  }
+}
+
+### 知性型戦闘コンピューター（砲撃－殲滅）
+utility_component_template = {
+  key = "EAC_COMBAT_COMPUTER_ARTILLERY_MAX_SAPIENT"
+  size = small
+  icon = "GFX_eac_ship_part_computer_artillery_max_sapient"
+  icon_frame = 1
+  power = @power3
+  resources = {
+    category = ship_aura_components
+    cost = {
+      alloys = @cost3
+    }
+  }
+
+  class_restriction = { shipclass_military shipclass_starbase shipclass_military_special }
+  size_restriction = { cruiser battleship titan Battlecruiser Dreadnought juggernaut crisis_cruiser star_eater offspring_cruiser offspring_battleship }
+
+  component_set = "combat_computers"
+  ship_behavior = "artillery_max"
+  prerequisites = { "tech_combat_computers_3" }
+
+  ship_modifier = {
+    ship_fire_rate_mult = 0.20
+    ship_weapon_range_mult = 0.20
+  }
+
+  ai_weight = {
+    weight = 4
+
+    modifier = {
+      factor = 5
+      is_preferred_weapons = weapon_type_energy
+    }
+
+    modifier = {
+      factor = 0
+      OR = {
+        has_global_flag = ghost_signal_5_flag
+        has_global_flag = ghost_signal_4_flag
+        has_global_flag = ghost_signal_3_flag
+        has_global_flag = ghost_signal_2_flag
+        has_global_flag = ghost_signal_1_flag
+        has_policy_flag = ai_outlawed
+      }
+    }
+
+    modifier = {
+      factor = 0
+      has_ethic = ethic_gestalt_consciousness
+    }
+  }
+}
+
+### 自律型戦闘AI（砲撃－殲滅）
+utility_component_template = {
+  key = "EAC_COMBAT_COMPUTER_ARTILLERY_MAX_AUTONOMOUS"
+  size = small
+  icon = "GFX_eac_ship_part_computer_artillery_max_sapient"
+  icon_frame = 1
+  power = @power3
+  resources = {
+    category = ship_components
+    cost = {
+      alloys = @cost3
+    }
+  }
+
+  class_restriction = { shipclass_military shipclass_starbase shipclass_military_special }
+  size_restriction = { cruiser battleship titan Battlecruiser Dreadnought juggernaut crisis_cruiser star_eater offspring_cruiser offspring_battleship }
+  
+  component_set = "combat_computers"
+  ship_behavior = "artillery_max"
+  prerequisites = { "tech_combat_computers_autonomous" }
+
+  ship_modifier = {
+    ship_fire_rate_mult = 0.20
+    ship_weapon_range_mult = 0.20
+  }
+
+  ai_weight = {
+    weight = 4
+
+    modifier = {
+      factor = 5
+      is_preferred_weapons = weapon_type_energy
+    }
+
+    modifier = {
+      factor = 0
+      NOT = { has_ethic = ethic_gestalt_consciousness }
+    }
+  }
+}
+
+### 未来予知型インターフェース（砲撃－殲滅）
+utility_component_template = {
+  key = "EAC_COMBAT_COMPUTER_ARTILLERY_MAX_PRECOG"
+  size = small
+  icon = "GFX_eac_ship_part_computer_artillery_max_precog"
+  icon_frame = 1
+  power = @power3
+  resources = {
+    category = ship_components
+    cost = {
+      alloys = @cost3
+    }
+  }
+
+  class_restriction = { shipclass_military shipclass_starbase shipclass_military_special }
+  size_restriction = { cruiser battleship titan Battlecruiser Dreadnought juggernaut crisis_cruiser star_eater offspring_cruiser offspring_battleship }
+
+  component_set = "combat_computers"
+  ship_behavior = "artillery_max"
+  prerequisites = { "tech_precognition_interface" }
+
+  ship_modifier ={
+    ship_fire_rate_mult = 0.15
+    ship_weapon_range_mult = 0.15
+    ship_tracking_add = 10
+  }
+
+  ai_weight = {
+    weight = 5
+
+    modifier = {
+      factor = 5
+      is_preferred_weapons = weapon_type_energy
+    }
+
+    modifier = {
+      factor = 0.0
+      is_country_type = default
+      NOT = { has_ascension_perk = ap_transcendence }
+    }
+
+    modifier = {
+      factor = 0.0
+      OR = {
+        is_country_type = fallen_empire
+        is_country_type = awakened_fallen_empire
+        is_country_type = gate_builders
+      }
+      NOT = { has_ethic = ethic_fanatic_spiritualist }
+    }
+  }
+}

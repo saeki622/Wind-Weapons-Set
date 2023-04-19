@@ -372,7 +372,7 @@ entity = {
 
 #MID1
 entity = {
-	name = "necroid_01_Dreadnought_mid1_L2S4_entity"
+	name = "necroid_01_Dreadnought_mid_L2S4_entity"
 	pdxmesh = "necroid_01_battleship_mid_L2S4_mesh"
 	
 	default_state = "idle"
@@ -407,7 +407,7 @@ entity = {
 }
 
 entity = {
-	name = "necroid_01_Dreadnought_mid1_L1M4_entity"
+	name = "necroid_01_Dreadnought_mid_L1M4_entity"
 	pdxmesh = "necroid_01_battleship_mid_L1M4_mesh"
 	
 	default_state = "idle"
@@ -442,7 +442,7 @@ entity = {
 }
 
 entity = {
-	name = "necroid_01_Dreadnought_mid1_L2M2_entity"
+	name = "necroid_01_Dreadnought_mid_L2M2_entity"
 	pdxmesh = "necroid_01_battleship_mid_L2M2_mesh"
 	
 	default_state = "idle"
@@ -477,7 +477,7 @@ entity = {
 }
 
 entity = {
-	name = "necroid_01_Dreadnought_mid1_L3_entity"
+	name = "necroid_01_Dreadnought_mid_L3_entity"
 	pdxmesh = "necroid_01_battleship_mid_L3_mesh"
 	
 	default_state = "idle"
@@ -512,7 +512,7 @@ entity = {
 }
 
 entity = {
-	name = "necroid_01_Dreadnought_mid1_M4SHB_entity"
+	name = "necroid_01_Dreadnought_mid_M4SHB_entity"
 	pdxmesh = "necroid_01_battleship_mid_M4SHB_mesh"
 	
 	default_state = "idle"
@@ -553,7 +553,7 @@ entity = {
 }
 
 entity = {
-	name = "necroid_01_Dreadnought_mid1_S4LHB_entity"
+	name = "necroid_01_Dreadnought_mid_S4LHB_entity"
 	pdxmesh = "necroid_01_battleship_mid_S4LHB_mesh"
 	
 	default_state = "idle"

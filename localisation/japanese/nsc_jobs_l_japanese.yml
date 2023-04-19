@@ -1,0 +1,5 @@
+﻿l_japanese:
+ job_diagnostician:0 "診断医 $jp_nsc2$"
+ job_diagnostician_plural:0 "診断医 $jp_nsc2$"
+ job_diagnostician_desc:0 "この銀河病院で働く専門労働者はロボットの製造、あるいは有機生命体治療のエキスパートである。"
+ mod_job_diagnostician_add:0 "$job_diagnostician$の職業枠"

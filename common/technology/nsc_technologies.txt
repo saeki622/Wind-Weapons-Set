@@ -21,8 +21,6 @@
 ### SHIP HULLS ###
 ##################
 
-
-
 tech_Battlecruiser_1 = {
 	cost = @tier3cost4
 	area = engineering
@@ -155,45 +153,21 @@ tech_supportcruiser_1 = {
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ##################################
 ### STARBASE MODULES/BUILDINGS ###
 ##################################
-
 
 ################
 ### REACTORS ###
 ################
 
-
 ########################
 ### REACTOR BOOSTERS ###
 ########################
 
-
 ##############################
 ### STRIKECRUISER UPGRADES ###
 ##############################
-
 
 ##############################
 ### BATTLECRUISER UPGRADES ###
@@ -330,7 +304,6 @@ tech_battlecruiser_hull_2 = {
 ########################
 ### CARRIER UPGRADES ###
 ########################
-
 
 ############################
 ### DREADNOUGHT UPGRADES ###
@@ -476,7 +449,6 @@ tech_dreadnought_hull_2 = {
 ### STARBASE UPGRADES ###
 #########################
 
-
 ############################
 ### MINING/POWER STATION ###
 ############################
@@ -555,7 +527,6 @@ tech_starbase_upkeep_1 = {
 #########################
 ### DEFENSE PLATFORMS ###
 #########################
-
 
 ############################
 ### HYPERLANE GENERATION ###
@@ -676,6 +647,35 @@ tech_nsc_ai_computer_1 = {
 	}
 }
 
+tech_tomahawk_cruise_missile_1 = {
+	cost = @tier4cost3
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = { "tech_missiles_5" }
+	weight = @tier4weight3
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_CRUISEMISSILE_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_CRUISEMISSILE_CONSTRUCTION_DESC"
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 10
+			any_neighbor_country = { has_technology = tech_tomahawk_cruise_missile_1 }
+		}	
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+
 tech_galactic_mall = {
 	cost = @tier5cost4
 	area = society
@@ -716,36 +716,25 @@ tech_galactic_mall = {
 	}
 }
 
-tech_hospital = {
-	cost = @tier5cost4
-	area = society
-	tier = 5
-	category = { biology }
+tech_hospital ={
+	cost = @tier5cost4                                                ### 研究完了までに必要な研究力の基本値
+	area = society                                                    ### 研究の分野
+	tire = 5                                                          ### テクノロジーの世代
+	category = { biology }                                            ### 分野内でのカテゴリー
 	weight = @tier5weight3
-	
+
 	prereqfor_desc = {
 		ship = {
-			title = "TECH_UNLOCK_HOPSITAL_TITLE"
+			title "TECH_UNLOCK_HOPSITAL_TITLE"
 			desc = "TECH_UNLOCK_HOSPITAL_DESC"
 		}
 	}
-	
+
 	weight_modifier = {
 		modifier = {
 			factor = 10
 			any_neighbor_country = { has_technology = tech_hospital }
-		}	
-		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
-			}
 		}
-	}
-	
-	ai_weight = {
-		factor = @best_megastructure_ai_tech_factor
 		modifier = {
 			factor = value:tech_weight_likelihood
 			research_leader = {
@@ -755,48 +744,7 @@ tech_hospital = {
 		}
 	}
 }
-
-
-
-
-	
-
-
-
-
-
-
 
 ####################
 ### LOCKS/CHECKS ###
 ####################
-tech_nsc_dlc_check = {
-	area = physics
-	cost = 0
-	Tier = 0
-	start_tech = yes
-	category = { particles }
-
-	potential = { host_has_dlc = "Apocalypse" }
-	
-	prereqfor_desc = {
-		ship = {
-			title = "TECH_UNLOCK_NSC_DLC_CONSTRUCTION_TITLE"
-			desc = "TECH_UNLOCK_NSC_DLC_CONSTRUCTION_DESC"
-		}
-	}
-	
-	ai_weight = { factor = 0 }
-}
-
-tech_nsc_disabled_sections = {
-	area = society
-	cost = 0
-	tier = 0
-	category = { materials }
-	ai_update_type = all
-	weight = 0
-
-	ai_weight = { factor = 0 }
-	potential = { always = no }
-}

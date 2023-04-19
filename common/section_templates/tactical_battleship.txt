@@ -286,7 +286,13 @@ ship_section_template = {
 		locatorname = "large_gun_01"
 	}
 
-	large_utility_slots = 4	
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "large_gun_01"
+	}
+
+	large_utility_slots = 3	
 	aux_utility_slots = 2
 		
 	resources = {
@@ -347,7 +353,6 @@ ship_section_template = {
 	
 
 	large_utility_slots = 2
-	medium_utility_slots = 3
 	aux_utility_slots = 2	
 	
 	resources = {

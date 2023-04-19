@@ -1,0 +1,88 @@
+﻿l_japanese:
+
+ CORVETTE_GUNSHIP: "ガンシップ"
+ CORVETTE_ARMORED: "巡視船"
+ CORVETTE_JAEGER: "シップハンター"
+ 
+ DESTROYER_BOW_L1: "ミサイル・ボウ"
+ DESTROYER_BOW_ARTILLERY: "アーティレリ・ボウⅡ"
+ DESTROYER_BOW_ARMORED: "バルクヘッド・ボウ"
+ DESTROYER_BOW_HANGAR: "ハンガー・ボウ"
+ DESTROYER_STERN_S1PD1: "ピケットインターセプター・スタン"
+ DESTROYER_STERN_ARMORED: "バルクヘッド・スタン"
+ DESTROYER_STERN_TORPEDO: "ミサイル・スタン"
+ 
+ CRUISER_STERN_M1: "ミサイル・スタン"
+ CRUISER_BOW_PICKET_SHIP: "ピケットシップ・ボウ"
+ CRUISER_BOW_ARMORED: "バルクヘッド・ボウ"
+ CRUISER_BOW_HANGAR: "ハンガー・ボウ"
+ CRUISER_MID_ARMORED: "バルクヘッド・コア"
+ CRUISER_MID_CARRIER: "キャリア―・コア"
+ CRUISER_STERN_PICKET_SHIP: "ピケットシップ・スタン"
+ CRUISER_STERN_ARMORED: "バルクヘッド・スタン"
+ CRUISER_STERN_MISSILE: "ミサイル・スタン"
+ CRUISER_STERN_BRIDGE: "ブリッジ・スタン"
+ 
+ BATTLESHIP_BOW_L1M1S2: "ミサイル・ボウ"
+ BATTLESHIP_MID_L2M2: "ミサイル・コア"
+ BATTLESHIP_STERN_M2: "ハンガー・スタン"
+ BATTLESHIP_BOW_ARMORED: "バルクヘッド・ボウ"
+ BATTLESHIP_BOW_CARRIER: "キャリア―・ボウ"
+ BATTLESHIP_MID_ARMORED: "バルクヘッド・コア"
+ BATTLESHIP_MID_SUPERCARRIER: "スーパーキャリア―・コア"
+ BATTLESHIP_STERN_MISSILE: "ミサイル・スタン"
+ BATTLESHIP_STERN_ARMORED: "バルクヘッド・スタン"
+ BATTLESHIP_STERN_CARRIER: "キャリア―・スタン"
+ BATTLESHIP_STERN_BRIDGE: "ブリッジ・スタン"
+ 
+ TITAN_MID_MISSILE: "タイタン ミサイル・コア"
+ TITAN_MID_CARRIER: "タイタン キャリア―・コア"
+ TITAN_MID_ARMORED: "タイタン バルクヘッド・コア"
+ TITAN_MID_MISSILE_ARTILLERY: "タイタン バラージ・コア"
+ TITAN_MID_PERDITION: "タイタン ピケットシップ・コア"
+ TITAN_STERN_MISSILE: "タイタン ミサイル・スタン"
+ TITAN_STERN_CARRIER: "タイタン キャリア―・スタン"
+ TITAN_STERN_ARMORED: "タイタン バルクヘッド・スタン"
+ TITAN_STERN_MISSILE_ARTILLERY: "タイタン バラージ・スタン"
+ TITAN_STERN_PERDITION: "タイタン ピケットシップ・スタン"
+ 
+ TECH_UNLOCK_CORVETTE_HULL_1_TITLE: "§HUnlocks Ship Section:§! Gunship\n§HUnlocks Ship Section:§! Patrol Boat";
+ TECH_UNLOCK_CORVETTE_HULL_1_DESC: "§HGunship:§! A ship equipped with a higher caliber weapon.\n§HPatrol Boat:§! A ship that sacrifices firepower for protection."
+ TECH_UNLOCK_CORVETTE_HULL_2_TITLE: "§HUnlocks Ship Section:§! Schiffjaeger";
+ TECH_UNLOCK_CORVETTE_HULL_2_DESC: "§HGunship:§! A ship that sacrifices protection for firepower."
+ TECH_UNLOCK_DESTROYER_HULL_1_TITLE: "§HUnlocks Ship Sections:§! Artillery Bow, Picket Interceptor Stern, Bulkhead Sections";
+ TECH_UNLOCK_DESTROYER_HULL_1_DESC: "§HArtillery Bow:§! A section equipped with a higher caliber weapon.\n§HPicket Interceptor Stern:§! A section that has only one point defense gun.\n§HBulkhead Sections:§! Sections that sacrifices firepower for protection."
+ TECH_UNLOCK_DESTROYER_HULL_2_TITLE: "§HUnlocks Ship Section:§! Hangar Bow\n§HUnlocks Ship Section:§! ミサイル・スタン";
+ TECH_UNLOCK_DESTROYER_HULL_2_DESC: "§HHangar Bow:§! A section that sacrifices protection for strike craft capability.\n§Hミサイル・スタン:§! A section that sacrifices protection for missile capability."
+ TECH_UNLOCK_CRUISER_HULL_1_TITLE: "§HUnlocks Ship Sections:§! Picket Ship Bow, Picket Ship Stern, Bulkhead Sections";
+ TECH_UNLOCK_CRUISER_HULL_1_DESC: "§HPicket Ship Bow/Stern:§! Sections that are specialized toward point defense.\n§HBulkhead Sections:§! Sections that sacrifices firepower for protection."
+ TECH_UNLOCK_CRUISER_HULL_2_TITLE: "§HUnlocks Ship Sections:§! Hangar Bow, Missile Hangar Core, Missile Salvo Stern, Bridge Stern";
+ TECH_UNLOCK_CRUISER_HULL_2_DESC: "§HHangar Bow:§! A section that sacrifices protection for strike craft capability.\n§HMissile Hangar Core:§! A section that sacrifices protection for combined missile and strike craft capability.\n§HMissile Salvo Stern:§! A section that sacrifices protection for an even greater missile capacity.\n§HBridge Stern:§! A section that sacrifices all weapons for a huge capacity of utility slots and an extra auxiliary slot."
+ TECH_UNLOCK_BATTLESHIP_HULL_1_TITLE: "§HUnlocks Ship Section:§! ミサイル・スタン\n§HUnlocks Ship Section:§! Bulkhead Sections";
+ TECH_UNLOCK_BATTLESHIP_HULL_1_DESC: "§Hミサイル・スタン:§! A section with missile capability.\n§HBulkhead Sections:§! Sections that sacrifices firepower for protection."
+ TECH_UNLOCK_BATTLESHIP_HULL_2_TITLE: "§HUnlocks Ship Sections:§! Carrier Bow, Superキャリア―・コア, Missile Hangar Stern, Bridge Stern";
+ TECH_UNLOCK_BATTLESHIP_HULL_2_DESC: "§HCarrier Bow:§! A section that sacrifices protection for an even greater strike craft capability.\n§HSuperキャリア―・コア:§! A section that sacrifices protection for an even greater strike craft capability.\n§HMissile Hangar Stern:§! A section that sacrifices protection for combined missile and strike craft capability.\n§HBridge Stern:§! A section that sacrifices all weapons for a huge capacity of utility slots and an extra auxiliary slot."
+ TECH_UNLOCK_TITAN_HULL_1_TITLE: "§HUnlocks Ship Sections:§! Missile Sections, Carrier Sections, Bulkhead Sections, Missile Artillery Sections";
+ TECH_UNLOCK_TITAN_HULL_1_DESC: "§HMissile Sections:§! Sections solely dedicated to missile capacity.\n§HCarrier Sections:§! Sections solely dedicated to hangar capacity.\n§HBulkhead Sections:§! Sections that sacrifices firepower for protection.§HBarrage Sections:§! Sections that sacrifice protection for an increase in firepower with a combination of missiles and large weapons.\n"
+ TECH_UNLOCK_TITAN_HULL_2_TITLE: "§HUnlocks Ship Section:§! ピケットシップ・コア\n§HUnlocks Ship Section:§! ピケットシップ・スタン";
+ TECH_UNLOCK_TITAN_HULL_2_DESC: "§Hピケットシップ・コア/Stern:§! Sections dedicated entirely to extra large weapons."
+
+ ### 銀河英雄伝説 ###
+ the_Galactic_Empire_Fleet:0 "銀河帝国(銀英伝)"
+ the_Galactic_Empire_Fleet_desc:0 "劣悪遺伝子排除法を発令する!"
+
+ The_Free_Planets_Alliance:0 "自由惑星同盟"
+ The_Free_Planets_Alliance_desc:0 "これが民主主義の力だ...!!"
+
+ ### WWS ###
+ BATTLECRUISER_STERN: "ヘヴィー・スタン"
+
+ SHIP_GRAPHICS_BATTLECRUISER_DESC: "速度は最大の防御とはなりえない。しかし船は速ければ速いほど良い。"
+ SHIP_GRAPHICS_DREADNOUGHT_DESC: "ドレッドノートは現存する全ての軍艦を超越する最強の軍艦です。"
+
+ ### United Fleet Shipset ###
+ United_fleet: "連合艦隊"
+ Warship_Girls: "連合艦隊(青)"
+ ShenHai: "連合艦隊(赤)"
+ United_fleet_White: "連合艦隊(白)"
+ 
