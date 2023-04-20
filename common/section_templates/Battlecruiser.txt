@@ -30,11 +30,11 @@ ship_section_template = {
 		template = "invisible_large_turret"
 		locatorname = "large_gun_01"
 	}
-	
-	
+
+
 	large_utility_slots = 1
-	aux_utility_slots = 1
-	
+	aux_utility_slots = 2
+
 	resources = {
 		category = ship_sections
 		cost = { alloys = @cost4 }
@@ -47,7 +47,7 @@ ship_section_template = {
 	fits_on_slot = bow
 	entity = "Battlecruiser_bow_L1_entity"
 	icon = "GFX_ship_part_core_bow"
-	
+
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
@@ -63,12 +63,12 @@ ship_section_template = {
 		template = "invisible_large_turret"
 		locatorname = "large_gun_01"
 	}
-	
-	
-	
+
+
+
 	large_utility_slots = 2
-	aux_utility_slots = 1
-	
+	aux_utility_slots = 3
+
 	resources = {
 		category = ship_sections
 		cost = { alloys = @cost3 }
@@ -81,7 +81,7 @@ ship_section_template = {
 	fits_on_slot = bow
 	entity = "Battlecruiser_bow_M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
-	
+
 	component_slot = {
 		name = "TORPEDO_01"
 		template = "medium_missile_turret"
@@ -102,12 +102,12 @@ ship_section_template = {
 		template = "small_turret"
 		locatorname = "small_gun_02"
 	}
-	
+
 
 	large_utility_slots = 1
 	medium_utility_slots = 1
-	aux_utility_slots = 2
-	
+	aux_utility_slots = 3
+
 	resources = {
 		category = ship_sections
 		cost = { alloys = @cost2 }
@@ -120,7 +120,7 @@ ship_section_template = {
 	fits_on_slot = bow
 	entity = "Battlecruiser_bow_M2_entity"
 	icon = "GFX_ship_part_core_bow"
-	
+
 	component_slot = {
 		name = "MEDIUM_GUN_01"
 		template = "medium_turret"
@@ -136,12 +136,12 @@ ship_section_template = {
 		template = "invisible_medium_turret"
 		locatorname = "medium_gun_01"
 	}
-	
+
 
 	large_utility_slots = 1
 	medium_utility_slots = 1
-	aux_utility_slots = 2
-	
+	aux_utility_slots = 3
+
 	resources = {
 		category = ship_sections
 		cost = { alloys = @cost2 }
@@ -157,13 +157,13 @@ ship_section_template = {
 	fits_on_slot = mid1
 	entity = "Battlecruiser_mid_L1M1_entity"   ### entities.assetで紐付けに必要(nameの部分)
 	icon = "GFX_ship_part_core_mid"
-	
+
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
 		locatorname = "large_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "TORPEDO_01"
 		template = "medium_missile_turret"
@@ -174,12 +174,12 @@ ship_section_template = {
 		template = "invisible_missile_turret"
 		locatorname = "medium_gun_01"
 	}
-	
-	
+
+
 	large_utility_slots = 1
 	medium_utility_slots = 1
-	aux_utility_slots = 1
-	
+	aux_utility_slots = 2
+
 	resources = {
 		category = ship_sections
 		cost = { alloys = @cost2 }
@@ -192,13 +192,19 @@ ship_section_template = {
 	fits_on_slot = mid1
 	entity = "Battlecruiser_mid_L1M1_entity"
 	icon = "GFX_ship_part_core_mid"
-	
+
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
 		locatorname = "large_gun_01"
 	}
-	
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_01"
+	}
+
 	component_slot = {
 		name = "MEDIUM_GUN_01"
 		template = "medium_turret"
@@ -214,11 +220,11 @@ ship_section_template = {
 	
 	large_utility_slots = 1
 	medium_utility_slots = 1
-	aux_utility_slots = 1
+	aux_utility_slots = 2
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost3 }
+		cost = { alloys = @cost2 }
 	}
 }
 
@@ -253,7 +259,7 @@ ship_section_template = {
 	
 	
 	large_utility_slots = 2
-	aux_utility_slots = 1
+	aux_utility_slots = 2
 	
 	resources = {
 		category = ship_sections
@@ -292,11 +298,11 @@ ship_section_template = {
 	
 	large_utility_slots = 1
 	medium_utility_slots = 1
-	aux_utility_slots = 1
+	aux_utility_slots = 2
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { alloys = @cost3 }
 	}
 }
 
@@ -331,11 +337,68 @@ ship_section_template = {
 	
 	large_utility_slots = 1
 	medium_utility_slots = 1
-	aux_utility_slots = 1
+	aux_utility_slots = 2
 	
 	resources = {
 		category = ship_sections
 		cost = { alloys = @cost1 }
+	}
+}
+
+ship_section_template = {
+	key = "BATTLECRUISER_MID1_PD2HB4"
+	ship_size = Battlecruiser
+	fits_on_slot = mid1
+	entity = "Battlecruiser_mid_PD2HB4_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name ="STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+
+  large_utility_slots = 1
+	medium_utility_slots = 1
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost3 }
 	}
 }
 
@@ -348,7 +411,7 @@ ship_section_template = {
 	fits_on_slot = mid2
 	entity = "Battlecruiser_mid2_L1M1_entity"
 	icon = "GFX_ship_part_core_mid"
-	
+
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
@@ -370,7 +433,7 @@ ship_section_template = {
 	
 	large_utility_slots = 1
 	medium_utility_slots = 1
-	aux_utility_slots = 1
+	aux_utility_slots = 2
 	
 	resources = {
 		category = ship_sections
@@ -405,21 +468,21 @@ ship_section_template = {
 
 	large_utility_slots = 1
 	medium_utility_slots = 1
-	aux_utility_slots = 1
+	aux_utility_slots = 2
 
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost3 }
+		cost = { alloys = @cost2 }
 	}
 }
 
-ship_section_template = {             ### mid2 ###
+ship_section_template = {
 	key = "BATTLECRUISER_MID2_M2S2"
 	ship_size = Battlecruiser
 	fits_on_slot = mid2
 	entity = "Battlecruiser_mid2_M2S2_entity"
 	icon = "GFX_ship_part_core_mid"
-	
+
 	component_slot = {
 		name = "MEDIUM_GUN_01"
 		template = "medium_turret"
@@ -442,7 +505,7 @@ ship_section_template = {             ### mid2 ###
 	}
 	
 	large_utility_slots = 2
-	aux_utility_slots = 1
+	aux_utility_slots = 2
 	
 	resources = {
 		category = ship_sections
@@ -481,11 +544,11 @@ ship_section_template = {
 	
 	large_utility_slots = 1
 	medium_utility_slots = 1
-	aux_utility_slots = 1
+	aux_utility_slots = 2
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { alloys = @cost3 }
 	}
 }
 
@@ -520,7 +583,7 @@ ship_section_template = {
 	
 	large_utility_slots = 1
 	medium_utility_slots = 1
-	aux_utility_slots = 1
+	aux_utility_slots = 2
 	
 	resources = {
 		category = ship_sections
@@ -528,186 +591,43 @@ ship_section_template = {
 	}
 }
 
-#############
-### MID 3 ### # MID3はv3.6.1では使用してない
-#############
 ship_section_template = {
-	key = "BATTLECRUISER_MID3_L1G2"
+	key = "BATTLECRUISER_MID2_L1M1PD2"
 	ship_size = Battlecruiser
-	fits_on_slot = mid3
-	entity = "Battlecruiser_mid2_L1M1_entity"
-	icon = "GFX_ship_part_core_mid"
-	
-	component_slot = {
-		name = "LARGE_GUN_01"
-		template = "large_turret"
-		locatorname = "large_gun_01"
-	}
-	
-	component_slot = {
-		name = "TORPEDO_01"
-		template = "medium_missile_turret"
-		locatorname = "medium_gun_01"
-	}
-	component_slot = {
-		name = "TORPEDO_02"
-		template = "invisible_missile_turret"
-		locatorname = "medium_gun_01"
-	}
-	
-	
-	medium_utility_slots = 3
-	aux_utility_slots = 1
-	
-	resources = {
-		category = ship_sections
-		cost = { alloys = @cost2 }
-	}
-}
-
-ship_section_template = {
-	key = "BATTLECRUISER_MID3_L2M1"
-	ship_size = Battlecruiser
-	fits_on_slot = mid3
-	entity = "Battlecruiser_mid2_L1M1_entity"
-	icon = "GFX_ship_part_core_mid"
-	
-	component_slot = {
-		name = "LARGE_GUN_01"
-		template = "large_turret"
-		locatorname = "large_gun_01"
-	}
-	
-	component_slot = {
-		name = "MEDIUM_GUN_01"
-		template = "medium_turret"
-		locatorname = "medium_gun_01"
-	}
-	
-	aux_utility_slots = 1
-	medium_utility_slots = 2
-	
-	resources = {
-		category = ship_sections
-		cost = { alloys = @cost3 }
-	}
-}
-
-ship_section_template = {
-	key = "BATTLECRUISER_MID3_M2S2"
-	ship_size = Battlecruiser
-	fits_on_slot = mid3
+	fits_on_slot = mid2
 	entity = "Battlecruiser_mid2_M2S2_entity"
 	icon = "GFX_ship_part_core_mid"
-	
+
 	component_slot = {
 		name = "MEDIUM_GUN_01"
 		template = "medium_turret"
 		locatorname = "medium_gun_01"
 	}
 	component_slot = {
-		name = "MEDIUM_GUN_02"
-		template = "medium_turret"
+		name = "LARGE_GUN_01"
+		template = "large_turret"
 		locatorname = "medium_gun_02"
 	}
-	
 	component_slot = {
-		name = "SMALL_GUN_01"
-		template = "small_turret"
+		name = "PD_GUN_01"
+		template = "point_defence_turret"
 		locatorname = "small_gun_01"
 	}
 	component_slot = {
-		name = "SMALL_GUN_02"
-		template = "small_turret"
+		name = "PD_GUN_02"
+		template = "point_defence_turret"
 		locatorname = "small_gun_02"
 	}
-	
-	
-	medium_utility_slots = 4
-	aux_utility_slots = 1
-	
-	resources = {
-		category = ship_sections
-		cost = { alloys = @cost1 }
-	}
-}
 
-ship_section_template = {
-	key = "BATTLECRUISER_MID3_G4"
-	ship_size = Battlecruiser
-	fits_on_slot = mid3
-	entity = "Battlecruiser_mid2_M3_entity"
-	icon = "GFX_ship_part_core_mid"
-	
-	component_slot = {
-		name = "TORPEDO_01"
-		template = "medium_missile_turret"
-		locatorname = "medium_gun_01"
-	}
-	component_slot = {
-		name = "TORPEDO_02"
-		template = "medium_missile_turret"
-		locatorname = "medium_gun_02"
-	}
-	component_slot = {
-		name = "TORPEDO_03"
-		template = "medium_missile_turret"
-		locatorname = "medium_gun_03"
-	}
-	component_slot = {
-		name = "TORPEDO_04"
-		template = "invisible_missile_turret"
-		locatorname = "medium_gun_01"
-	}
-	
-	
-	medium_utility_slots = 3
-	aux_utility_slots = 1
-	
+	large_utility_slots = 1
+	medium_utility_slots = 1
+	aux_utility_slots = 2
+
 	resources = {
 		category = ship_sections
 		cost = { alloys = @cost2 }
 	}
 }
-
-ship_section_template = {
-	key = "BATTLECRUISER_MID3_M4"
-	ship_size = Battlecruiser
-	fits_on_slot = mid3
-	entity = "Battlecruiser_mid2_M3_entity"
-	icon = "GFX_ship_part_core_mid"
-	
-	component_slot = {
-		name = "MEDIUM_GUN_01"
-		template = "medium_turret"
-		locatorname = "medium_gun_01"
-	}
-	component_slot = {
-		name = "MEDIUM_GUN_02"
-		template = "medium_turret"
-		locatorname = "medium_gun_02"
-	}
-	component_slot = {
-		name = "MEDIUM_GUN_03"
-		template = "medium_turret"
-		locatorname = "medium_gun_03"
-	}
-	component_slot = {
-		name = "MEDIUM_GUN_04"
-		template = "invisible_medium_turret"
-		locatorname = "medium_gun_01"
-	}
-	
-	
-	medium_utility_slots = 3
-	aux_utility_slots = 1
-	
-	resources = {
-		category = ship_sections
-		cost = { alloys = @cost1 }
-	}
-}
-
 
 #############
 ### STERN ###
@@ -735,12 +655,12 @@ ship_section_template = {
 		locatorname = "medium_gun_01"
 	}
 	
-	large_utility_slots = 2
-	aux_utility_slots = 1
+	large_utility_slots = 3
+	aux_utility_slots = 2
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { alloys = @cost1 }
 	}
 }
 
@@ -757,13 +677,13 @@ ship_section_template = {
 		locatorname = "medium_gun_01"
 	}
 
-	#component_slot = {
-	#	 template = "large_strike_craft"
-	#	 rotation = 90
-	#	 locatorname = "medium_gun_01"
-	#}	
+	omponent_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "medium_gun_01"
+	}
   
-	large_utility_slots = 2
+	large_utility_slots = 3
 	aux_utility_slots = 2
 	
 	resources = {
@@ -771,8 +691,6 @@ ship_section_template = {
 		cost = { alloys = @cost2 }
 	}
 }
-
-
 
 ship_section_template = {
 	key = "BATTLECRUISER_STERN_S3"
@@ -802,7 +720,7 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 	
-	large_utility_slots = 2
+	large_utility_slots = 3
 	aux_utility_slots = 2
 	
 	resources = {
@@ -839,7 +757,7 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 	
-	large_utility_slots = 2
+	large_utility_slots = 3
 	aux_utility_slots = 2
 	
 	resources = {
@@ -857,11 +775,17 @@ ship_section_template = {
 
 	component_slot = {
 		name = "MEDIUM_GUN_01"
-		template = "medium_turret"
+		template = "medium_missile_turret"
 		locatorname = "medium_gun_01"
 	}
 
-	large_utility_slots = 4
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_02"
+	}
+
+	large_utility_slots = 3
 	aux_utility_slots = 2
 
 	resources = {

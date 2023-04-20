@@ -1,35 +1,35 @@
 # Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes.
 #############
-#	POWER	#
+###	POWER	###
 #############
 
-@corvette_power_1 = 75
-@corvette_power_2 = 100
-@corvette_power_3 = 130
-@corvette_power_4 = 170
-@corvette_power_5 = 220
-@corvette_power_6 = 285
+@corvette_power_1 = 113   ### 75
+@corvette_power_2 = 150   ### 100
+@corvette_power_3 = 200   ### 130
+@corvette_power_4 = 250   ### 170
+@corvette_power_5 = 330   ### 220
+@corvette_power_6 = 440   ### 285
 
-@destroyer_power_1 = 140
-@destroyer_power_2 = 180
-@destroyer_power_3 = 240
-@destroyer_power_4 = 320
-@destroyer_power_5 = 430
-@destroyer_power_6 = 550
+@destroyer_power_1 = 210   ### 140
+@destroyer_power_2 = 270   ### 180
+@destroyer_power_3 = 360   ### 240
+@destroyer_power_4 = 480   ### 320
+@destroyer_power_5 = 650   ### 430
+@destroyer_power_6 = 830   ### 550
 
-@cruiser_power_1 = 280
-@cruiser_power_2 = 360
-@cruiser_power_3 = 480
-@cruiser_power_4 = 620
-@cruiser_power_5 = 800
-@cruiser_power_6 = 1030
+@cruiser_power_1 = 420    ### 280
+@cruiser_power_2 = 540    ### 360
+@cruiser_power_3 = 720    ### 480
+@cruiser_power_4 = 930    ### 620
+@cruiser_power_5 = 1200   ### 800
+@cruiser_power_6 = 1550   ### 1030
 
-@battleship_power_1 = 1100
-@battleship_power_2 = 1440
-@battleship_power_3 = 1900
-@battleship_power_4 = 2500
-@battleship_power_5 = 3100
-@battleship_power_6 = 4000
+@battleship_power_1 = 850    ### 1100
+@battleship_power_2 = 1080   ### 1440
+@battleship_power_3 = 1430   ### 1900
+@battleship_power_4 = 1880   ### 2500
+@battleship_power_5 = 2330   ### 3100
+@battleship_power_6 = 3000   ### 4000
 
 @titan_power_1 = 1100
 @titan_power_2 = 1450

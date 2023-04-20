@@ -46,13 +46,13 @@ entity = {
 	# add additional locators here to handle underside
 	locator = { 
 		name = "eac_underside_medium_turret_01" 
-		position = { 0 -2.1 -1 }
+		position = { 0 0 0 }
 		rotation = { 0 0 180 }
 	}
 
 	locator = { 
 		name = "eac_underside_medium_turret_02" 
-		position = { 0 -2.0 -4.5 }
+		position = { 0 0 0 }
 		rotation = { 0 0 180 }
 	}
 }

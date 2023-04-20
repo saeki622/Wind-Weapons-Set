@@ -45,7 +45,7 @@
  TITAN_STERN_ARMORED: "タイタン バルクヘッド・スタン"
  TITAN_STERN_MISSILE_ARTILLERY: "タイタン バラージ・スタン"
  TITAN_STERN_PERDITION: "タイタン ピケットシップ・スタン"
- 
+
  TECH_UNLOCK_CORVETTE_HULL_1_TITLE: "§HUnlocks Ship Section:§! Gunship\n§HUnlocks Ship Section:§! Patrol Boat";
  TECH_UNLOCK_CORVETTE_HULL_1_DESC: "§HGunship:§! A ship equipped with a higher caliber weapon.\n§HPatrol Boat:§! A ship that sacrifices firepower for protection."
  TECH_UNLOCK_CORVETTE_HULL_2_TITLE: "§HUnlocks Ship Section:§! Schiffjaeger";
@@ -85,4 +85,34 @@
  Warship_Girls: "連合艦隊(青)"
  ShenHai: "連合艦隊(赤)"
  United_fleet_White: "連合艦隊(白)"
- 
+
+ ### Cloak(クローク) ###
+ CLOAKING_STRENGTH_11:0 "§M摩訶不思議 (レベル 1)§!"
+ CLOAKING_STRENGTH_12:0 "§M摩訶不思議 (レベル 2)§!"
+ CLOAKING_STRENGTH_13:0 "§M摩訶不思議 (レベル 3)§!"
+ CLOAKING_STRENGTH_14:0 "§M摩訶不思議 (レベル 4)§!"
+ CLOAKING_STRENGTH_15:0 "§M摩訶不思議 (レベル 5)§!"
+ CLOAKING_STRENGTH_16:0 "§M摩訶不思議 (レベル 6)§!"
+ CLOAKING_STRENGTH_20:0 "§M摩訶不思議 (レベル 10)§!"
+
+ CLOAKING_STRENGTH_11_DESC:0 "$CLOAKING_EXCEPTIONAL_DESC$"
+ CLOAKING_STRENGTH_12_DESC:0 "\nこれ以上は上げても意味ないですよ。"
+ CLOAKING_STRENGTH_13_DESC:0 "$CLOAKING_EXCEPTIONAL_DESC$"
+ CLOAKING_STRENGTH_14_DESC:0 "$CLOAKING_EXCEPTIONAL_DESC$"
+ CLOAKING_STRENGTH_15_DESC:0 "\n上げすぎだドアホ。"
+ CLOAKING_STRENGTH_16_DESC:0 "\n無駄な努力だなぁ...。"
+ CLOAKING_STRENGTH_20_DESC:0 "\nお前が誰よりも透明だ。"
+
+ CLOAKING_DETECTION_11:0 "§M摩訶不思議 (レベル 1)§!"
+ CLOAKING_DETECTION_12:0 "§M摩訶不思議 (レベル 2)§!"
+ CLOAKING_DETECTION_13:0 "§M摩訶不思議 (レベル 3)§!"
+ CLOAKING_DETECTION_14:0 "§M摩訶不思議 (レベル 4)§!"
+ CLOAKING_DETECTION_15:0 "§M摩訶不思議 (レベル 5)§!"
+ CLOAKING_DETECTION_16:0 "§M摩訶不思議 (レベル 6)§!"
+ CLOAKING_DETECTION_20:0 "§M摩訶不思議 (レベル 10)§!"
+
+ CLOAKING_DETECTION_11_DESC:0 "$CLOAKING_DETECTION_EXCEPTIONAL_DESC$\n\nこの星系基地の探知能力はこれ以上上げても非合理的ですよ。"
+ CLOAKING_DETECTION_12_DESC:0 "$CLOAKING_DETECTION_EXCEPTIONAL_DESC$\n\nこの星系基地の探知能力はこれ以上上げても非合理的ですよ。"
+ CLOAKING_DETECTION_13_DESC:0 "$CLOAKING_DETECTION_EXCEPTIONAL_DESC$\n\nこの星系基地の探知能力はこれ以上上げても非合理的ですよ。"
+ CLOAKING_DETECTION_14_DESC:0 "$CLOAKING_DETECTION_EXCEPTIONAL_DESC$\n\nこの星系基地の探知能力はこれ以上上げても非合理的ですよ。"
+ CLOAKING_DETECTION_15_DESC:0 "$CLOAKING_DETECTION_EXCEPTIONAL_DESC$\n\nこの星系基地の探知能力はこれ以上上げても非合理的ですよ。"

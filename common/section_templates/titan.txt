@@ -17,7 +17,7 @@ ship_section_template = {
 	}
 	
 	large_utility_slots = 4
-	aux_utility_slots = 1
+	aux_utility_slots = 2
 
 	resources = {
 		category = ship_sections
@@ -65,7 +65,7 @@ ship_section_template = {
 	}
 	
 	large_utility_slots = 4
-	aux_utility_slots = 1
+	aux_utility_slots = 2
 
 	resources = {
 		category = ship_sections
@@ -103,7 +103,7 @@ ship_section_template = {
 	}
 	
 	large_utility_slots = 4	
-	aux_utility_slots = 1
+	aux_utility_slots = 2
 	
 	resources = {
 		category = ship_sections

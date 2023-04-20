@@ -1,10 +1,8 @@
-version="3.6.0"
+version="3.7.4"
 tags={
-	"Spaceships"
 	"Balance"
 	"Military"
 }
-name="Wind Weapons Set"
-picture="thumbnail.png"
-supported_version="3.6.0"
-remote_file_id="2878463582"
+name="Wind Weapons Set 2"
+supported_version="3.7.4"
+remote_file_id="2902973001"

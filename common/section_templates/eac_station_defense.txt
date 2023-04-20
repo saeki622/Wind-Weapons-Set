@@ -1,6 +1,9 @@
-###########################
-## Military Station
-###########################
+########################
+### Military Station ###
+########################
+
+### Dryus氏の[JP localize patch]At War: Starbase Improvementsより抜粋
+### 武装の砲身の一部透明化
 
 @eac_medium_utility_slots = 6
 @eac_aux_ulility_slots = 2
@@ -10,11 +13,13 @@ ship_section_template = {
 	key = "EAC_HEAVY_MILITARY_STATION_SECTION"
 	ship_size = eac_military_station_heavy_small
 	ship_size = military_station_medium
+	ai_tags = { artillery } ##DryusFix
 	
 	fits_on_slot = "north"
 	fits_on_slot = "west"
 	fits_on_slot = "east"
 	fits_on_slot = "south"
+ 	should_draw_components = yes ##DryusFix
 	
 	entity = "eac_military_station_section_heavy_entity"
 	icon = "GFX_ship_part_core_mid"
@@ -50,6 +55,7 @@ ship_section_template = {
 	key = "EAC_HANGAR_MILITARY_STATION_SECTION"
 	ship_size = eac_military_station_heavy_small
 	ship_size = military_station_medium
+	ai_tags = { carrier } ##DryusFix
 	
 	prerequisites = { tech_strike_craft_1 tech_strike_craft_2 tech_strike_craft_3 }
 	
@@ -57,6 +63,7 @@ ship_section_template = {
 	fits_on_slot = "west"
 	fits_on_slot = "east"
 	fits_on_slot = "south"
+ 	should_draw_components = yes ##DryusFix
 	entity = "eac_military_station_section_heavy_entity"
 	icon = "GFX_ship_part_core_mid"
 	
@@ -98,11 +105,13 @@ ship_section_template = {
 	key = "EAC_MEDIUM_MILITARY_STATION_SECTION"
 	ship_size = eac_military_station_heavy_small
 	ship_size = military_station_medium
+	ai_tags = { gunship } ##DryusFix
 	
 	fits_on_slot = "north"
 	fits_on_slot = "west"
 	fits_on_slot = "east"
 	fits_on_slot = "south"
+ 	should_draw_components = yes ##DryusFix
 	entity = "eac_military_station_section_medium_entity"
 	icon = "GFX_ship_part_core_mid"	
 		
@@ -119,7 +128,7 @@ ship_section_template = {
 	}
 
 	component_slot = {
-		name = "MEDIUM_GUN_03"
+		name = "invisible_MEDIUM_GUN_03"
 		template = "invisible_medium_turret"
 		locatorname = "eac_underside_medium_turret_01"
 	}
@@ -156,14 +165,20 @@ ship_section_template = {
 	key = "EAC_MISSILE_MILITARY_STATION_SECTION"
 	ship_size = eac_military_station_heavy_small
 	ship_size = military_station_medium
+ 	ai_tags = { explosive } ##DryusFix
 	
 	fits_on_slot = "north"
 	fits_on_slot = "west"
 	fits_on_slot = "east"
 	fits_on_slot = "south"
+ 	should_draw_components = yes ##DryusFix
+
 	entity = "eac_military_station_section_medium_entity"
 	icon = "GFX_ship_part_core_mid"
 	
+ 	prerequisites = { tech_torpedoes_1 } ##DryusFix
+
+ 	ai_tags = { energy_torpedoes } ##DryusFix
 		
 	component_slot = {
 		name = "TORPEDO_01"
@@ -212,11 +227,13 @@ ship_section_template = {
 	key = "EAC_LIGHT_MILITARY_STATION_SECTION"
 	ship_size = eac_military_station_heavy_small
 	ship_size = military_station_medium
+	ai_tags = { gunship } ##DryusFix
 	
 	fits_on_slot = "north"
 	fits_on_slot = "west"
 	fits_on_slot = "east"
 	fits_on_slot = "south"
+ 	should_draw_components = yes ##DryusFix
 	entity = "eac_military_station_section_light_entity"
 	icon = "GFX_ship_part_core_mid"
 	
@@ -247,27 +264,27 @@ ship_section_template = {
 	}
 
 	component_slot = {
-		name = "invisible_SMALL_GUN_05"
-		template = "small_turret"
+		name = "SMALL_GUN_05"
+		template = "invisible_small_turret"
 		locatorname = "eac_underside_small_turret_01"
 	}
 	
 	component_slot = {
-		name = "invisible_SMALL_GUN_06"
-		template = "small_turret"
+		name = "SMALL_GUN_06"
+		template = "invisible_small_turret"
 		locatorname = "eac_underside_small_turret_02"
 	}
 
 	component_slot = {
-		name = "invisible_SMALL_GUN_07"
-		template = "small_turret"
+		name = "SMALL_GUN_07"
+		template = "invisible_small_turret"
 		locatorname = "eac_underside_small_turret_03"
 		is_side_slot = no
 	}
 	
 	component_slot = {
-		name = "invisible_SMALL_GUN_08"
-		template = "small_turret"
+		name = "SMALL_GUN_08"
+		template = "invisible_small_turret"
 		locatorname = "eac_underside_small_turret_04"
 		is_side_slot = no
 	}
@@ -295,11 +312,13 @@ ship_section_template = {
 	key = "EAC_PD_MILITARY_STATION_SECTION"
 	ship_size = eac_military_station_heavy_small
 	ship_size = military_station_medium
+	ai_tags = { screen } ##DryusFix
 	
 	fits_on_slot = "north"
 	fits_on_slot = "west"
 	fits_on_slot = "east"
 	fits_on_slot = "south"
+ 	should_draw_components = yes ##DryusFix
 	entity = "eac_military_station_section_light_entity"
 	icon = "GFX_ship_part_core_mid"
 	
@@ -376,11 +395,13 @@ ship_section_template = {
 	key = "EAC_SPINAL_MILITARY_STATION_SECTION"
 	ship_size = eac_military_station_heavy_small
 	ship_size = military_station_medium
+	ai_tags = { artillery } ##DryusFix
 	
 	fits_on_slot = "north"
 	fits_on_slot = "west"
 	fits_on_slot = "east"
 	fits_on_slot = "south"
+ 	should_draw_components = yes ##DryusFix
 	
 	entity = "eac_military_station_section_heavy_entity"
 	icon = "GFX_ship_part_core_mid"

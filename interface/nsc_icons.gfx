@@ -6,19 +6,19 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_starbase_ship_size_small"
 		textureFile = "gfx/interface/icons/starbase_ship_sizes.dds"
-		noOfFrames = 7
+		noOfFrames = 5
 	}
 
-	spriteType = {
+	spriteType = {                                                        
 		name = "GFX_starbase_ship_size_medium"
 		textureFile = "gfx/interface/icons/starbase_ship_sizes_medium.dds"
-		noOfFrames = 7
+		noOfFrames = 5
 	}
 	
-	spriteType = {
+	spriteType = {                                                ### アウトライナー上での星系基地のアイコンについての表記
 		name = "GFX_starbase_outliner"
 		textureFile = "gfx/interface/icons/starbase_outliner.dds"
-		noOfFrames = 7
+	noOfFrames = 9                                                ### アイコンの使う数(左から9個目まで使用する表記?)
 	}
 	
 	#################

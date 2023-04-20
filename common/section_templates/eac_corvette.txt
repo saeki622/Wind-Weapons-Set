@@ -34,13 +34,13 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 	component_slot = {
-		name = "TORPED_02"
+		name = "TORPEDO_02"
 		template = "medium_missile_turret"
 		locatorname = "small_gun_03"
 	}
 
 	small_utility_slots = 2
-	aux_utility_slots = 1
+	aux_utility_slots = 2
 
 	resources = {
 		category = ship_sections

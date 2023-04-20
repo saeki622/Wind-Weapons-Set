@@ -128,11 +128,12 @@ weapon_component_template = {
 	accuracy = 0.85
 	tracking = 0.0
 
+  prerequisites = { "tech_energy_lance_2" }
 	component_set = "XL_BEAM_STARBASE"
 	projectile_gfx = "tachyon_lance"
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_artillery }
-	size_restriction = { Battlecruiser juggernaut military_station_small }
+	size_restriction = { Battlecruiser battleship colossus juggernaut military_station_small }
 
 	resources = {
 		category = ship_components
@@ -201,6 +202,89 @@ weapon_component_template = {
 #	ai_weight = { weight = 1 }
 #}
 
+###############################
+### LARGE WEAPON COMPONENTS ###
+###############################
+
+weapon_component_template = {
+	key = "RED_L_BEAM"
+	size = large
+	type = instant
+
+	icon = "GFX_ship_part_laser_1"
+	icon_frame = 1
+
+	firing_arc = 60
+
+	power = -110
+	damage = { min = 250 max = 500}
+	hull_damage = 2.00
+	shield_damage = 0.10
+	shield_penetration = 0.0
+	armor_damage = 2.00
+	armor_penetration = 0.0
+	windup = { min = 10 max = 20 }
+	total_fire_time = 60
+	range = 150
+	min_range = 45.0
+	accuracy = 0.85
+	tracking = 0.0
+
+  prerequisites = { "tech_energy_lance_1" }
+	component_set = "RED_L_BEAM"
+	projectile_gfx = "infrared_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery artillery }
+
+	resources = {
+		category = ship_components
+		cost = {alloys = @l_t5_cost }
+		upkeep = {
+			energy = @l_t5_upkeep_energy
+			alloys = @l_t5_upkeep_alloys
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "BLUE_L_BEAM"
+	size = large
+	type = instant
+
+	icon = "GFX_ship_part_laser_2"
+	icon_frame = 1
+
+	min_range = 40
+
+	power = -110
+	damage = { min = 160 max = 600}
+	hull_damage = 2.00
+	shield_damage = 0.10
+	shield_penetration = 0.0
+	armor_damage = 2.00
+	armor_penetration = 0.0
+	windup = { min = 10 max = 16}
+	total_fire_time = 60
+	range = 100
+	accuracy = 0.85
+	tracking = 0.0
+
+  prerequisites = { "tech_energy_lance_2" }
+	component_set = "BLUE_L_BEAM"
+	projectile_gfx = "blue_laser_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery artillery }
+
+	resources = {
+		category = ship_components
+		cost = {alloys = @l_t5_cost }
+		upkeep = {
+			energy = @l_t5_upkeep_energy
+			alloys = @l_t5_upkeep_alloys
+		}
+	}
+}
+
 ############################################
 ### SMALL/MEDIUM/LARGE WEAPON COMPONENTS ###
 ############################################
@@ -230,7 +314,7 @@ weapon_component_template = {
 	projectile_gfx = "gauss_cannon_s"
 	tags = { weapon_type_kinetic }
 	ai_tags = { weapon_role_anti_shield }
-	size_restriction = { battleship Flagship headquarters juggernaut military_station_small }
+	size_restriction = { destroyer Dreadnought juggernaut military_station_small eac_military_station_heavy_small }
 
 	resources = {
 		category = ship_components
@@ -279,7 +363,7 @@ weapon_component_template = {
 	projectile_gfx = "infrared_laser_s"
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_anti_armor }
-	size_restriction = { battleship Flagship headquarters juggernaut military_station_small }
+	size_restriction = { destroyer Dreadnought juggernaut military_station_small eac_military_station_heavy_small }
 
 	resources = {
 		category = ship_components

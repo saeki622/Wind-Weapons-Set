@@ -12,6 +12,16 @@ invisible_large_turret = {
 	component = weapon
 }
 
+invisible_medium_missile_turret = {
+	size = torpedo
+  component = weapon
+}
+
+invisible_large_strike_craft = {
+	size = large
+	component = strike_craft
+}
+
 titanic_turret = {
 	size = titanic
 	component = weapon
@@ -19,9 +29,4 @@ titanic_turret = {
 		weapon_type_kinetic = "turret_xl_entity"
 		weapon_type_energy = "turret_xl_entity"
 	}
-}
-
-pasmod_drop_pod = {
-	size = medium
-	component = strike_craft
 }
